@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<!-- Controladores -->
+	
+	<servlet>
+		<servlet-name>Gmail</servlet-name>
+		<servlet-class>servlets.GmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Gmail</servlet-name>
+		<url-pattern>/gmail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarDatosAd</servlet-name>
+		<servlet-class>controladores.ModificarDatosAd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarDatosAd</servlet-name>
+		<url-pattern>/modificardatosad</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarDatosAl</servlet-name>
+		<servlet-class>controladores.ModificarDatosAl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarDatosAl</servlet-name>
+		<url-pattern>/modificardatosal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarDatosPr</servlet-name>
+		<servlet-class>controladores.ModificarDatosPr</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarDatosPr</servlet-name>
+		<url-pattern>/modificardatospr</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlMenuAdministrador</servlet-name>
+		<servlet-class>controladores.ControlMenuAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlMenuAdministrador</servlet-name>
+		<url-pattern>/menuadministrador</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlMenuProfesor</servlet-name>
+		<servlet-class>controladores.ControlMenuProfesor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlMenuProfesor</servlet-name>
+		<url-pattern>/menuprofesor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlMenuAlumno</servlet-name>
+		<servlet-class>controladores.ControlMenuAlumno</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlMenuAlumno</servlet-name>
+		<url-pattern>/menualumno</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlAdministradores</servlet-name>
+		<servlet-class>controladores.ControlAdministradores</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlAdministradores</servlet-name>
+		<url-pattern>/controladministradores</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlAlumnos</servlet-name>
+		<servlet-class>controladores.ControlAlumnos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlAlumnos</servlet-name>
+		<url-pattern>/controlalumnos</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlApoderados</servlet-name>
+		<servlet-class>controladores.ControlApoderados</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlApoderados</servlet-name>
+		<url-pattern>/controlapoderados</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlProfesores</servlet-name>
+		<servlet-class>controladores.ControlProfesores</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlProfesores</servlet-name>
+		<url-pattern>/controlprofesores</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlCursos</servlet-name>
+		<servlet-class>controladores.ControlCursos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlCursos</servlet-name>
+		<url-pattern>/controlcursos</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlAcceso</servlet-name>
+		<servlet-class>controladores.ControlAcceso</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlAcceso</servlet-name>
+		<url-pattern>/controlacceso</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlAdminComunicados</servlet-name>
+		<servlet-class>controladores.ControlAdminComunicados</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlAdminComunicados</servlet-name>
+		<url-pattern>/controladmincomunicados</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlHorarios</servlet-name>
+		<servlet-class>controladores.ControlHorarios</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlHorarios</servlet-name>
+		<url-pattern>/controlhorarios</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControlNotas</servlet-name>
+		<servlet-class>controladores.ControlLlenarNotas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControlNotas</servlet-name>
+		<url-pattern>/llenarnotas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AEditarInfo</servlet-name>
+		<servlet-class>controladores.AdministradorEditarInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AEditarInfo</servlet-name>
+		<url-pattern>/adeditinfopersonal</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Listas -->
+	
+	<servlet>
+		<servlet-name>Busqueda</servlet-name>
+		<servlet-class>pw2.Busqueda</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Busqueda</servlet-name>
+		<url-pattern>/busquedaxadministrador</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ConsultaCurso</servlet-name>
+		<servlet-class>servlets.ConsultaCurso</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConsultaCurso</servlet-name>
+		<url-pattern>/consultacurso</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListCursosE</servlet-name>
+		<servlet-class>pw2.ListCursosEspecificos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCursosE</servlet-name>
+		<url-pattern>/controlcomunicados</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Serve</servlet-name>
+		<servlet-class>pw2.Serve</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Serve</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroAdministrador</servlet-name>
+		<servlet-class>servlets.RegistroAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroAdministrador</servlet-name>
+		<url-pattern>/registroadministrador</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroAlumno</servlet-name>
+		<servlet-class>servlets.RegistroAlumno</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroAlumno</servlet-name>
+		<url-pattern>/registroalumno</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroApoderado</servlet-name>
+		<servlet-class>servlets.RegistroApoderado</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroApoderado</servlet-name>
+		<url-pattern>/registroapoderado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroProfesor</servlet-name>
+		<servlet-class>servlets.RegistroProfesor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroProfesor</servlet-name>
+		<url-pattern>/registroprofesor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroComunicado</servlet-name>
+		<servlet-class>servlets.RegistroComunicado</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroComunicado</servlet-name>
+		<url-pattern>/registrocomunicado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroCurso</servlet-name>
+		<servlet-class>servlets.RegistroCurso</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroCurso</servlet-name>
+		<url-pattern>/registrocurso</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroHorario</servlet-name>
+		<servlet-class>servlets.RegistroHorario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroHorario</servlet-name>
+		<url-pattern>/registrohorario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddData</servlet-name>
+		<servlet-class>servlets.RegistroAddData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddData</servlet-name>
+		<url-pattern>/registrodata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EliminarAdministrador</servlet-name>
+		<servlet-class>servlets.EliminarAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarAdministrador</servlet-name>
+		<url-pattern>/eliminaradministrador</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ModificarAdministrador</servlet-name>
+		<servlet-class>servlets.ModificarAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarAdministrador</servlet-name>
+		<url-pattern>/modificaradministrador</url-pattern>
+	</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>EliminarAlumno</servlet-name>
+		<servlet-class>servlets.EliminarAlumno</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarAlumno</servlet-name>
+		<url-pattern>/eliminaralumno</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarAlumno</servlet-name>
+		<servlet-class>servlets.ModificarAlumno</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarAlumno</servlet-name>
+		<url-pattern>/modificaralumno</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EliminarProfesor</servlet-name>
+		<servlet-class>servlets.EliminarProfesor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarProfesor</servlet-name>
+		<url-pattern>/eliminarprofesor</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ModificarProfesor</servlet-name>
+		<servlet-class>servlets.ModificarProfesor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarProfesor</servlet-name>
+		<url-pattern>/modificarprofesor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GuardarCambiosAd</servlet-name>
+		<servlet-class>servlets.GuardarCambiosAd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarCambiosAd</servlet-name>
+		<url-pattern>/guardarcambiosad</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CerrarSesion</servlet-name>
+		<servlet-class>servlets.CerrarSesion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CerrarSesion</servlet-name>
+		<url-pattern>/cerrarsesion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistroNotas</servlet-name>
+		<servlet-class>servlets.RegistroNotas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistroNotas</servlet-name>
+		<url-pattern>/registronotas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OtorgarPermisos</servlet-name>
+		<servlet-class>servlets.OtorgarPermisos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OtorgarPermisos</servlet-name>
+		<url-pattern>/permisos</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
