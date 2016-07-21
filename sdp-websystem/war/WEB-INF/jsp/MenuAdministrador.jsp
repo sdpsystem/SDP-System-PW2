@@ -166,6 +166,8 @@
 				<br>
 				<a href="/controlcursos" class="button large">
 				<span class="icon-code">Cursos</span></a>
+				<br>
+				<div id="resp1"></div> 
 				
 			</div>
 			<!-- End of administracion -->

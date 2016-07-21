@@ -33,20 +33,6 @@ yearRange: "1900:2013"
 });
 });
 </script>
-  <script type="text/javascript">
-function ConfirmDemo() {
-//Ingresamos un mensaje a mostrar
-var mensaje = confirm("¿Deseas guardar los cambios?");
-//Detectamos si el usuario acepto el mensaje
-if (mensaje) {
-	
-}
-//Detectamos si el usuario denegó el mensaje
-else {
-alert("¡Has cancelado la operacion!");
-}
-}
-</script>
 </head>
 <body>
 	<div id="templatemo_body_wrapper">
@@ -221,7 +207,7 @@ alert("¡Has cancelado la operacion!");
 			
 		    
 	</div>
-	<div class="fila"><input type="submit" onclick="ConfirmDemo()" value="Guardar Cambios"/></div>
+	<div class="fila"><input type="submit" value="Guardar Cambios"/></div>
 	</form>
 			
 			</div>

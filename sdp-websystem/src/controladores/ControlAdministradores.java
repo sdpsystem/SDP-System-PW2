@@ -1,6 +1,7 @@
 package controladores;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.jdo.PersistenceManager;
 import javax.servlet.RequestDispatcher;
@@ -21,6 +22,7 @@ public class ControlAdministradores extends HttpServlet{
 		
 		HttpSession misesion= req.getSession();
 		String email = (String) misesion.getAttribute("email");
+	
 		
 		if(email.equals("madara.sdp@gmail.com")){
 			RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/jsp/Administradores.jsp");
@@ -33,8 +35,11 @@ public class ControlAdministradores extends HttpServlet{
 		if(a.getRecursos().getAdministradores()==true){
 			RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/jsp/Administradores.jsp");
 			rd.forward(req, resp);
+			
 		}else{
-			resp.sendRedirect("/menuadministrador");
+			resp.setContentType( "text/html" );
+			resp.getWriter().println("No tienes acceso");
+			resp.getWriter().println("<a href='/menuadministrador'>Regresar</a>");
 		}
 		}
 		

@@ -1,4 +1,35 @@
-<!-- Indices written at Sun, 17 Jul 2016 18:43:14 PET -->
+<!-- Indices written at Thu, 21 Jul 2016 02:30:50 PET -->
 
-<datastore-indexes/>
+<datastore-indexes>
 
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Administrador" ancestor="false" source="auto">
+        <property name="email" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Profesor" ancestor="false" source="auto">
+        <property name="email" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Alumno" ancestor="false" source="auto">
+        <property name="email" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Apoderado" ancestor="false" source="auto">
+        <property name="email" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Profesor" ancestor="false" source="auto">
+        <property name="dni" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

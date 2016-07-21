@@ -34,7 +34,9 @@ public class ControlCursos extends HttpServlet{
 			RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/jsp/AdministrarCursos.jsp");
 			rd.forward(req, resp);
 		}else{
-			resp.sendRedirect("/menuadministrador");
+			resp.setContentType( "text/html" );
+			resp.getWriter().println("No tienes acceso");
+			resp.getWriter().println("<a href='/menuadministrador'>Regresar</a>");
 		}
 		}
 		
